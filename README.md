@@ -11,10 +11,10 @@ compiling
 To compile on Windows you will need git bash. 
 first, clone this repository (or download the zip and unzip to a location on your machine)
 
-$ cd path-to-folder-where-this-repository-is-cloned
-$ git archive HEAD --format=zip > bin/envital.gadget
+	$ cd path-to-folder-where-this-repository-is-cloned
+	$ git archive HEAD --format=zip > bin/envital.gadget
 
-This will create a file named [b]envital.gadget[/b] inside the bin folder.
+This will create a file named **envital.gadget** inside the bin folder.
 Just double click on the .gadget file to install
 
 troubleshooting installation
