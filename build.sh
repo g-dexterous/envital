@@ -1,0 +1,1 @@
+git archive HEAD --format=zip > bin/envital.gadget
