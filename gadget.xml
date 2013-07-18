@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <name>Envital</name>
+  <namespace>microsoft.windows</namespace>
+  <version>1.0.0.0</version>
+  <author name="Dexterous">
+    <info url="www.gunua-works.com" />
+    <logo src="assets/images/icon.png" />
+  </author>
+  <copyright>Powered by Envato API</copyright>
+  <description>Sidebar gadget to get vital information from the Envato API.</description>
+  <icons>
+    <icon height="48" width="48" src="assets/images/icon.png" />
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="view.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+      <defaultImage src="icon.png" />
+    </host>
+  </hosts>
+</gadget>

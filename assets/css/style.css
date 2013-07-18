@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    width: 130px;
+    height: 123px;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#balance{
+	color:#dff287;
+	font-family: Georgia, Times New Roman, serif;
+	font-weight: normal;
+	font-size:18px;
+	position: absolute;
+	top:18px;
+	left:27px;
+}
