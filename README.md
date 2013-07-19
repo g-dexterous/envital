@@ -17,6 +17,18 @@ first, clone this repository (or download the zip and unzip to a location on you
 This will create a file named **envital.gadget** inside the bin folder.
 Just double click on the .gadget file to install
 
+configuration
+=============
+
+The Installed gadget will be placed at following location:
+
+	%USERPROFILE%\AppData\Local\Microsoft\Windows Sidebar\Gadgets
+
+Go inside the gadget folder and edit view.html.
+Inside the view.html file insert your envato username and the api key.
+Remove the gadget from sidebar and load it again (to reflect the changes). This time don't re-install, just open the gadgets library (right click on desktop and select gadgets), the envital gadget will be present there, double click to install it.
+
+
 troubleshooting installation
 ============================
 
