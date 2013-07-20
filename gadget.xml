@@ -2,7 +2,7 @@
 <gadget>
   <name>Envital</name>
   <namespace>microsoft.windows</namespace>
-  <version>1.0.0.0</version>
+  <version>1.0.0.1</version>
   <author name="Dexterous">
     <info url="www.gunua-works.com" />
     <logo src="assets/images/icon.png" />
