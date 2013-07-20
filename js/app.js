@@ -1,4 +1,4 @@
-//System.Gadget.settingsUI="settings.html";
+System.Gadget.settingsUI="settings.html";
 
 // quirk change in jQuery for ajax to work within windows gadget
 jQuery.support.cors = true;
