@@ -9,7 +9,11 @@ var _previousBalance = 0,
 	_userName = "enter envato username here",
 	_apikey = "enter api here";
 
+//System.Gadget.onSettingsClosed=SettingsClosed;
 (function getVitalData() {
+	
+
+	/*html(System.Gadget.Settings.read("userName"));*/
 	randomNumber= function(){
 		//random number will be added to the request to prevent cached response
 		return (new Date()).getTime();
@@ -40,3 +44,8 @@ var _previousBalance = 0,
 		  }
 	  });
 })();
+
+
+function onSettingsClosed(){
+
+}
