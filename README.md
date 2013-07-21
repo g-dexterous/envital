@@ -8,7 +8,7 @@ This gadget also plays a notification sound when the balance changes (new sale)
 compiling
 =========
 
-To compile on Windows you will need 7zip installed.
+To compile on Windows **you will need 7zip installed**.
 If your installation path is different than the default path "C:\Program Files (x86)\7-Zip" then please edit the build.bat file to put the correct path
 
 building the gadget installer

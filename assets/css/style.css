@@ -8,20 +8,19 @@ body{
 }
 
 #balance{
-	color:#dff287;
+	color:#a6d55f;
 	font-family: Georgia, Times New Roman, serif;
 	font-weight: normal;
-	font-size:18px;
+	font-size:22px;
 	position: absolute;
 	top:18px;
-	left:27px;
+	left:22px;
 }
-
 #message{
 	font-family: arial, sans-serif;
 	font-size:11px;
 	position:absolute;
 	top:47px;
 	left:14px;
-	color:#ffffff;
+	color:#E3FF99;
 }
