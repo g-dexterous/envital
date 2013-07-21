@@ -2,7 +2,7 @@ body{
     margin: 0;
     width: 130px;
     height: 123px;
-    font-family: verdana;
+    font-family: arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
@@ -15,4 +15,13 @@ body{
 	position: absolute;
 	top:18px;
 	left:27px;
+}
+
+#message{
+	font-family: arial, sans-serif;
+	font-size:11px;
+	position:absolute;
+	top:47px;
+	left:14px;
+	color:#ffffff;
 }
