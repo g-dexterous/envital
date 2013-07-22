@@ -31,6 +31,7 @@ function getVitalData() {
 	    if(_previousBalance!=0 && newBalance > _previousBalance){
 	    	//console.log("Got $$$");
 	    	System.Sound.playSound("../assets/sound/effect.wav");
+	    	getThisMonthdata();
 	    }
 	    _previousBalance = newBalance;
 	    var balancedisplay_str = newBalance.toFixed(2);
@@ -44,11 +45,32 @@ function getVitalData() {
 	});
 };
 
+function getThisMonthdata() {
+	$.ajax({
+	  url: 'http://marketplace.envato.com/api/edge/'+_userName+'/'+_apikey+'/earnings-and-sales-by-month.json',
+	  /*url: 'http://localhost/envatoAPI/vitals.json?random='+randomNumber(),*/
+	  type: 'GET',
+	  dataType: 'json',
+	  success: function(data, textStatus, xhr) {
+	    //called when successful
+	    var len = data["earnings-and-sales-by-month"].length;
+	    
+	    var thisMonthDisplay_str = Number(data["earnings-and-sales-by-month"][len-1].earnings).toFixed(2);
+
+	    $('#thisMonth').html("$ "+thisMonthDisplay_str);
+	  },
+	  error: function(xhr, textStatus, errorThrown) {
+	    //called when there is an error
+	    $("#thisMonth").html(errorThrown);
+	  }
+	});
+}
+
 function settingsHaveChanged(){
 	/*$("#balance").html("changed");*/
 	_userName = System.Gadget.Settings.read("userName");
 	_apikey = System.Gadget.Settings.read("apiKey");
 
 	getVitalData();
-	$("#message").hide();
+	getThisMonthdata();
 }

@@ -19,15 +19,15 @@ body{
 	font-weight: bold;
 	font-size:20px;
 	position: absolute;
-	top:7px;
+	top:6px;
 	left:15px;
 }
-#message{
-	font-family: arial, sans-serif;
-	font-size:11px;
-	position:absolute;
-	top:47px;
-	left:14px;
-	color:#E3FF99;
-	display:none;
+#thisMonth{
+	color:#f1ffdd;
+	font-family: "Segoe UI", arial, sans-serif;
+	font-weight: bold;
+	font-size:20px;
+	position: absolute;
+	top:68px;
+	left:15px;
 }
