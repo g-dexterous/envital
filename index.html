@@ -1,52 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Envital : A windows sidebar gadget to display vital statistics through Envato API" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Envital by g-dexterous</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Envital</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1>Envital</h1>
+        <p>A windows sidebar gadget to display vital statistics through Envato API</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/g-dexterous/envital">View on GitHub</a>
+        <p class="view"><a href="https://github.com/g-dexterous/envital">View the Project on GitHub <small>g-dexterous/envital</small></a></p>
 
-          <h1 id="project_title">Envital</h1>
-          <h2 id="project_tagline">A windows sidebar gadget to display vital statistics through Envato API</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/g-dexterous/envital/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/g-dexterous/envital/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+        <ul>
+          <li><a href="https://github.com/g-dexterous/envital/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/g-dexterous/envital/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/g-dexterous/envital">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
         <h1>
 <a name="envital" class="anchor" href="#envital"><span class="octicon octicon-link"></span></a>envital</h1>
 
 <p>A windows sidebar gadget to display vital statistics through Envato API.
-After installing this gadget can display your current balance. 
-This gadget also plays a notification sound when the balance changes (new sale)</p>
+After installing this gadget can display your current balance and the earnings in the current month:</p>
+
+<p><img src="https://github.com/g-dexterous/envital/blob/master/assets/images/gadgetPreview.png?raw=true" alt="Envital sidebar gadget"></p>
+
+<p>This gadget also plays a notification sound when the balance changes (new sale)</p>
 
 <h1>
 <a name="compiling" class="anchor" href="#compiling"><span class="octicon octicon-link"></span></a>compiling</h1>
 
-<p>To compile on Windows you will need git bash. 
-first, clone this repository (or download the zip and unzip to a location on your machine)</p>
+<p>To compile on Windows <strong>you will need 7zip installed</strong>.
+If your installation path is different than the default path "C:\Program Files (x86)\7-Zip" then please edit the build.bat file to put the correct path</p>
 
-<pre><code>$ cd path-to-folder-where-this-repository-is-cloned
-$ git archive HEAD --format=zip &gt; bin/envital.gadget
+<h2>
+<a name="building-the-gadget-installer" class="anchor" href="#building-the-gadget-installer"><span class="octicon octicon-link"></span></a>building the gadget installer</h2>
+
+<p>First, clone this repository (or download the zip and unzip to a location on your machine)</p>
+
+<pre><code>&gt; cd path-to-folder-where-this-repository-is-cloned
+&gt; build.bat
 </code></pre>
+
+<p>You can also double click the build.bat file</p>
 
 <p>This will create a file named <strong>envital.gadget</strong> inside the bin folder.
 Just double click on the .gadget file to install</p>
@@ -54,14 +61,8 @@ Just double click on the .gadget file to install</p>
 <h1>
 <a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>configuration</h1>
 
-<p>The Installed gadget will be placed at following location:</p>
-
-<pre><code>%USERPROFILE%\AppData\Local\Microsoft\Windows Sidebar\Gadgets
-</code></pre>
-
-<p>Go inside the gadget folder and edit view.html.
-Inside the view.html file insert your envato username and the api key.
-Remove the gadget from sidebar and load it again (to reflect the changes). This time don't re-install, just open the gadgets library (right click on desktop and select gadgets), the envital gadget will be present there, double click to install it.</p>
+<p>Click on the settings icon (next to the installed gadget), this will open a settings dialog.
+Enter your envato username and the api key in the settings and press ok.</p>
 
 <h1>
 <a name="troubleshooting-installation" class="anchor" href="#troubleshooting-installation"><span class="octicon octicon-link"></span></a>troubleshooting installation</h1>
@@ -74,17 +75,12 @@ Do the following to fix it:</p>
 <li>Double click to install any available gadget. example - clock or calendar</li>
 </ol><p>After this you should be able to install envital gadget</p>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Envital maintained by <a href="https://github.com/g-dexterous">g-dexterous</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/g-dexterous">g-dexterous</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
     
-
   </body>
 </html>
