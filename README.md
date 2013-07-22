@@ -3,7 +3,9 @@ envital
 
 A windows sidebar gadget to display vital statistics through Envato API.
 After installing this gadget can display your current balance and the earnings in the current month:
-![Envital sidebar gadget](https://github.com/g-dexterous/envital/blob/master/assets/images/gadgetPreview.png?raw=true) 
+
+![Envital sidebar gadget](https://github.com/g-dexterous/envital/blob/master/assets/images/gadgetPreview.png?raw=true)
+
 This gadget also plays a notification sound when the balance changes (new sale)
 
 compiling
