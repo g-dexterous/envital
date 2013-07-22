@@ -1,20 +1,26 @@
 body{
     margin: 0;
     width: 130px;
-    height: 123px;
+    height: 165px;
     font-family: arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
 
+#data-bg {
+	position:absolute;
+	left:0;
+	top:0;
+}
+
 #balance{
-	color:#a6d55f;
-	font-family: Georgia, Times New Roman, serif;
-	font-weight: normal;
-	font-size:22px;
+	color:#f1ffdd;
+	font-family: "Segoe UI", arial, sans-serif;
+	font-weight: bold;
+	font-size:20px;
 	position: absolute;
-	top:18px;
-	left:22px;
+	top:7px;
+	left:15px;
 }
 #message{
 	font-family: arial, sans-serif;
@@ -23,4 +29,5 @@ body{
 	top:47px;
 	left:14px;
 	color:#E3FF99;
+	display:none;
 }
