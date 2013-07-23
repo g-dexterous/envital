@@ -1,6 +1,4 @@
 System.Gadget.settingsUI="settings.html";
-System.Gadget.Settings.write("envital_apiKey","keyyy");
-
 // quirk change in jQuery for ajax to work within windows gadget
 jQuery.support.cors = true;
 $.support.cors = true;
@@ -25,6 +23,8 @@ function getVitalData() {
 	  type: 'GET',
 	  dataType: 'json',
 	  complete: function(xhr, textStatus) {
+	  	var now = moment().format("DD MMM hh:mm a");
+	  	$("#updatedTime").html(now);
 	    setTimeout(getVitalData, 600000);
 	  },
 	  success: function(data, textStatus, xhr) {

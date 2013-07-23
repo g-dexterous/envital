@@ -1,7 +1,7 @@
 body{
     margin: 0;
     width: 130px;
-    height: 165px;
+    height: 185px;
     font-family: arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -30,4 +30,47 @@ body{
 	position: absolute;
 	top:68px;
 	left:15px;
+}
+#updatedTime{
+	color: #8a8a8b;
+	font-size: 10px;
+	font-family: "Segoe UI", arial, sans-serif;
+	font-weight: normal;
+	left:15px;
+	bottom:5px;
+	position: absolute;
+}
+
+#statementBtn{
+	position:absolute;
+	width:39px;
+	height:35px;
+	background:url('../images/iconButtons_sprite.png') -3px -3px;
+	left:3px;
+	bottom:23px;
+}
+#statementBtn:hover{
+	background:url(../images/iconButtons_sprite.png) -3px -41px;
+}
+#linkBtn{
+	position:absolute;
+	width:39px;
+	height:35px;
+	background:url('../images/iconButtons_sprite.png') -88px -3px;
+	left:88px;
+	bottom:23px;
+}
+#linkBtn:hover{
+	background:url(../images/iconButtons_sprite.png) -88px -41px;
+}
+#graphBtn{
+	position:absolute;
+	width:40px;
+	height:35px;
+	background:url('../images/iconButtons_sprite.png') -45px -3px;
+	left:45px;
+	bottom:23px;
+}
+#graphBtn:hover{
+	background:url(../images/iconButtons_sprite.png) -45px -41px;
 }
