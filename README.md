@@ -8,8 +8,19 @@ After installing this gadget can display your current balance and the earnings i
 
 This gadget also plays a notification sound when the balance changes (new sale)
 
-compiling
-=========
+installing
+==========
+
+Double-click on the envital.gadget file to install. Note - You will need the sidebar running with atleast one gadget present. Read troubleshooting below for more details. The gadget installer is located in the **bin** folder.
+
+configuration
+=============
+
+Click on the settings icon (next to the installed gadget), this will open a settings dialog.
+Enter your envato username and the api key in the settings and press ok.
+
+compiling from the source
+=========================
 
 To compile on Windows **you will need 7zip installed**.
 If your installation path is different than the default path "C:\Program Files (x86)\7-Zip" then please edit the build.bat file to put the correct path
@@ -25,13 +36,6 @@ You can also double click the build.bat file
 
 This will create a file named **envital.gadget** inside the bin folder.
 Just double click on the .gadget file to install
-
-configuration
-=============
-
-Click on the settings icon (next to the installed gadget), this will open a settings dialog.
-Enter your envato username and the api key in the settings and press ok.
-
 
 troubleshooting installation
 ============================

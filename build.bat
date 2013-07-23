@@ -1,1 +1,1 @@
-"c:\Program Files (x86)\7-Zip\7z.exe" a -tzip bin\envital.gadget -xr!bin -xr!.git -x!.gitignore -x!README.md -xr!psd -x!build.bat
+"c:\Program Files (x86)\7-Zip\7z.exe" a -tzip bin\envital.gadget -xr!bin -xr!.git -x!.gitignore -x!README.md -xr!psd -x!build.bat -x!envital.*
