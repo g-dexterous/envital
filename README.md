@@ -13,6 +13,10 @@ installing
 
 Double-click on the envital.gadget file to install. Note - You will need the sidebar running with atleast one gadget present. Read troubleshooting below for more details. The gadget installer is located in the **bin** folder.
 
+OR
+
+Download the [installer package](https://github.com/g-dexterous/envital/blob/master/bin/envital.gadget?raw=true)
+
 configuration
 =============
 
