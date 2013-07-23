@@ -15,8 +15,8 @@ System.Gadget.onSettingsClosing = function (event) {
         var username = document.getElementById("userid").value;
         var apiKey = document.getElementById("apiKey").value;
 
-        System.Gadget.Settings.write("username", username);
-        System.Gadget.Settings.write("apiKey", apiKey);
+        System.Gadget.Settings.write("envital_username", username);
+        System.Gadget.Settings.write("envital_apiKey", apiKey);
 
         /* Finally, we can call a function defined in the main gadget window's
            JavaScript to let it know that the settings have changed */
