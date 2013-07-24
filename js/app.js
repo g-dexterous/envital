@@ -119,7 +119,15 @@ function setDashboardLink(){
 		case "gr" :
 			theDashboardLink = "http://graphicriver.net/author_dashboard";
 			break;
-
+		case "pd" :
+			theDashboardLink = "http://photodune.net/author_dashboard";
+			break;
+		case "3d":
+			theDashboardLink = "http://3docean.net/author_dashboard";
+			break;
+		case "vh":
+			theDashboardLink = "http://graphicriver.net/author_dashboard";
+			break;
 	}
 	$("#linkBtn").attr("href",theDashboardLink);
 }
