@@ -9,12 +9,20 @@
     <link href="assets/css/settings.css" rel="stylesheet" type="text/css" />
     <script src="js/settings.js"></script>
 </head>
-<body>
+<body onload="javaScript:loadSettings();">
 	<div>
 		<label for="userid">Enter Envato userid:</label>
 		<input type="text" id="userid" name="userid">
 		<label for="apiKey">Enter API Key</label>
 		<input type="text" id="apiKey" name="apiKey">
+		<label for="dashboard">Select prefered dashboard:</label>
+		<select name="dashboard" id="dashboard">
+			<option value="ad">Activeden</option>
+			<option value="aj">Audiojungle</option>
+			<option value="cc">Codecanyon</option>
+			<option value="gr">Graphicriver</option>
+			<option value="tf">Themeforest</option>
+		</select>
 	</div>
 	<div>
 	   <strong>Envital</strong><br/>

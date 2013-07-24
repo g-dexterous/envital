@@ -7,7 +7,8 @@ $.support.cors = true;
 var _previousBalance = 0,
 	_userName = "",
 	_apikey = "",
-	_previousBalance = 0;
+	_previousBalance = 0,
+	_dashboard = "cc";
 
 /*html(System.Gadget.Settings.read("userName"));*/
 randomNumber= function(){
@@ -74,9 +75,12 @@ function settingsHaveChanged(){
 	/*$("#balance").html("changed");*/
 	_userName = System.Gadget.Settings.read("envital_userName");
 	_apikey = System.Gadget.Settings.read("envital_apiKey");
+	_dashboard = System.Gadget.Settings.read("envital_dashboard");
+
 
 	getVitalData();
 	getThisMonthdata();
+	setDashboardLink();
 }
 
 $(document).ready(function() {
@@ -84,9 +88,38 @@ $(document).ready(function() {
 	_userName = System.Gadget.Settings.read("envital_userName");
 	_apikey = System.Gadget.Settings.read("envital_apiKey");
 	_previousBalance = System.Gadget.Settings.read("envital_previousBalance");
+	_dashboard = System.Gadget.Settings.read("envital_dashboard");
 
 	if(_userName!=undefined && _userName != "" && _apikey!=undefined && _apikey != ""){
 		getVitalData();
 		getThisMonthdata();
 	}
+
+	if(_dashboard==undefined || _dashboard == "") {
+		_dashboard = "tf";
+	}
+	setDashboardLink();
+
 });
+
+function setDashboardLink(){
+	switch(_dashboard){
+		case "ad" :
+			theDashboardLink = "http://activeden.net/author_dashboard";
+			break;
+		case "aj" :
+			theDashboardLink = "http://audiojungle.net/author_dashboard";
+			break;
+		case "cc" :
+			theDashboardLink = "http://codecanyon.net/author_dashboard";
+			break;
+		case "tf" :
+			theDashboardLink = "http://themeforest.net/author_dashboard";
+			break;
+		case "gr" :
+			theDashboardLink = "http://graphicriver.net/author_dashboard";
+			break;
+
+	}
+	$("#linkBtn").attr("href",theDashboardLink);
+}
