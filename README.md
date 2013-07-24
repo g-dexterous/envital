@@ -11,11 +11,11 @@ This gadget also plays a notification sound when the balance changes (new sale)
 installing
 ==========
 
+Download the [installer package](https://github.com/g-dexterous/envital/blob/master/bin/envital.gadget?raw=true)
+
 Double-click on the envital.gadget file to install. Note - You will need the sidebar running with atleast one gadget present. Read troubleshooting below for more details. The gadget installer is located in the **bin** folder.
 
-OR
-
-Download the [installer package](https://github.com/g-dexterous/envital/blob/master/bin/envital.gadget?raw=true)
+NOTE: This gadget works on Windows 7 only (Windows Vista too, but who has it anyway?). Windows 8 users read below.
 
 configuration
 =============
@@ -51,3 +51,8 @@ Do the following to fix it:
 2. Double click to install any available gadget. example - clock or calendar
 
 After this you should be able to install envital gadget
+
+what about Windows 8
+====================
+
+There are a few ways to run gadgets on Windows 8. I haven't actually tested it as I do not have Windows 8 and have no plans to have it any time soon. If you a developer working on Windows 8, why not fork this repository and create a Windows 8 tile for envital?
