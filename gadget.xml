@@ -2,9 +2,9 @@
 <gadget>
   <name>Envital</name>
   <namespace>microsoft.windows</namespace>
-  <version>1.0.1.7</version>
+  <version>1.2.1.0</version>
   <author name="Dexterous">
-    <info url="www.gunua-works.com" />
+    <info url="http://g-dexterous.github.io/envital/" />
     <logo src="assets/images/icon.png" />
   </author>
   <copyright>Powered by Envato API</copyright>

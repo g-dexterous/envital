@@ -1,0 +1,47 @@
+body { 
+	margin: 0;
+    width: 200px;
+    height: 184px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color:#121212;
+}
+
+label, input, select { display: block; }
+input,select {margin-bottom:10px;}
+ul {
+	margin:0;
+	padding:0;
+}
+div#scrollbar1{
+	left:0;
+	top:0;
+	width:200px;
+	height:184px;
+	position:absolute;
+	background-color:#dadada;
+	font-weight:normal;
+}
+#scrollbar1 .viewport { width: 185px; height: 174px; overflow: auto; position: absolute; left:10px; top:5px; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar1 .scrollbar{  position: relative; background-position: 0 0; float: right;  }
+
+#events-list li{
+	font-size:12px;
+	border-bottom:1px solid #c5c5c5;
+	padding:5px 0;
+}
+.amount {
+	font-size: 14px;
+	color:#575757;
+	font-weight:bold;
+}
+.desc {
+	color:#606060;
+}
+.timeago {
+    font-style: italic;
+    font-weight: normal;
+    color:#7a7a7a;
+}
