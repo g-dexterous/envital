@@ -2,7 +2,7 @@
 <gadget>
   <name>Envital</name>
   <namespace>microsoft.windows</namespace>
-  <version>1.2.1.0</version>
+  <version>1.2.1.1</version>
   <author name="Dexterous">
     <info url="http://g-dexterous.github.io/envital/" />
     <logo src="assets/images/icon.png" />

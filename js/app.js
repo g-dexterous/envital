@@ -11,7 +11,7 @@ var _previousBalance = 0,
 	_dashboard = "cc",
 	monthlyData,
 	statementData,
-	thisBuildVersion=1;
+	thisBuildVersion=2;//<<<-- this variable responsible for autoupgrade.
 
 $(document).ready(function() {
 	// Stuff to do as soon as the DOM is ready;
