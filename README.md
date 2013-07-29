@@ -6,6 +6,10 @@ After installing this gadget can display your current balance and the earnings i
 
 ![Envital sidebar gadget](https://github.com/g-dexterous/envital/blob/master/assets/images/gadgetPreview.png?raw=true)
 
+The sales graph shows a two-series chart. The bars show the **earnings** of past 12 months whereas the line graph shows the **volume of sales** (total sales) per month.
+
+![Envital sidebar gadget](https://github.com/g-dexterous/envital/blob/master/assets/images/preview_flyout.png?raw=true)
+
 This gadget also plays a notification sound when the balance changes (new sale)
 
 installing
