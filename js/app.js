@@ -3,7 +3,6 @@ System.Gadget.settingsUI="settings.html";
 jQuery.support.cors = true;
 $.support.cors = true;
 
-
 var _previousBalance = 0,
 	_userName = "",
 	_apikey = "",
